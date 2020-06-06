@@ -1,0 +1,120 @@
+body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+nav div{
+    float: left;
+    margin-top: -10px;
+}
+nav ul {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+a.user-display{
+    pointer-events: none;
+}
+nav ul li a:hover{
+    background: white;
+    color: orangered;
+    text-decoration: unset;
+}
+
+.navbar-default{
+    height: unset;
+    background-color: orangered;
+    color: orangered;
+    background-image: unset;
+    border: none;
+    border-radius: unset;
+}
+
+.navbar-right {
+    margin-right: 1px;
+    margin-left: 1px;
+    padding-left: unset ;
+}
+.navbar-brand{
+    padding: 15px;
+}
+.dropdown-menu  {
+    float: right;
+    right: 0;
+    left: unset;
+    margin-right: 5px;
+    box-shadow: unset;
+    background: orangered;
+}
+.dropdown-menu li a{
+    border: none;
+}
+
+.dropdown-menu li {
+    display: list-item;
+}
+
+table{
+    width: 100%;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}
+th{
+    border-bottom: 3px solid #ddd;
+}
+.highlight:hover {
+    background-color: #f5f5f5;
+}
+.container{
+    min-height:  650px;
+}
+.btn {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: orangered;
+}
+.row{
+    margin-top: 20px;
+}
+
+.boton,.boton-moficar   {
+    background-color: red;
+    border-radius:25px;
+    border:1px solid #ff4800;
+    display:inline-block;
+    cursor:pointer;
+    color: white;
+    font-size:14px;
+    padding:0px 7px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    margin-left: 2px;
+}
+.boton:hover,.boton-moficar:hover {
+    background-color: white;
+    text-decoration-style: unset;
+}
+.boton:active,.boton-moficar:active {
+    position:relative;
+    top:1px;
+}
+.boton-moficar{
+    background-color: darkslateblue;
+}

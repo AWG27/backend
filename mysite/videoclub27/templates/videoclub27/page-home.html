@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Club - Home</title>
+    <!-- bootstrap  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- ajax  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+  
+    <!-- style  -->
+    {% load static %}  
+    <link href="{% static "videoclub27/styles/styles-home.css" %}" rel="stylesheet">
+    <link href="{% static "videoclub27/styles/logo.css" %}" rel="stylesheet">
+	<script src="{% static "videoclub27/scripts/home.js" %}"></script>
+</head>
+<body>
+
+
+<!------------------------------------------------------------------------>
+
+
+<!-- mantiene en top -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!-- logo en parte izquierdo -->
+    <a class="logo" href="{% url 'home' %}">
+	    <img alt="Brand" class="logo" src="{% static "videoclub27/images/logo-video-club27-trans.png" %}">
+    </a>
+    <!-- barra de busqueda en el centro -->
+        <div class="input-group">
+            <input type="text" class="form-control" id="home_busqueda" name="home_busqueda" value="" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn" id="boton_home_busqueda" type="submit">
+                    <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    <!-- boton usuario en la parte derecha-->
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+										  aria-haspopup="true" aria-expanded="false">{{ username }}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    {% if admin %}
+				<li><a class="dropdown-item-1" href="{% url 'administrator' %}">Administrador</a></li>
+			{% endif %}
+            <div class="dropdown-divider"></div>
+            <li>
+				<a class="dropdown-item-2">
+					 <form action="{% url 'logout_' %}" method="post">
+						{% csrf_token %}
+						<input class="inputestilo" type="submit" value="Cerrar Sesión"  />
+					
+					 </form>
+				</a>
+		 </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!------------------------------------------------------------------------>
+
+<div class="pelicula">
+    <div id="contenido"></div>
+</div>
+</body>
+</html>

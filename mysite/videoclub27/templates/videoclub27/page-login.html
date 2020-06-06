@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Club - Login</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    {% load static %}
+    <link href="{% static "videoclub27/styles/styles-login.css" %}" rel="stylesheet">
+    <link href="{% static "videoclub27/styles/logo.css" %}" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+<div class="container">
+    <a class="logo" href="index.html">
+	    <img alt="Brand" class="logo" src="{% static "videoclub27/images/logo-video-club27-trans.png" %}">
+    </a>
+</div>
+
+<div  class="login-box">
+	<form action="{% url 'login' %}" method="post">
+	 {% csrf_token %}
+         <!-- <h1>Bienvenida a Video Club</h1> -->
+         <div class="textbox">
+             <i class="glyphicon glyphicon-user" aria-hidden="true">
+                 <input type="text" placeholder="Usuario" name="name" value="" id="name">
+             </i>
+         </div>
+
+         <div class="textbox">
+             <i class="glyphicon glyphicon-lock" aria-hidden="true">
+                 <input type="password" placeholder="Contraseña" name="password"  value="" id="password">
+             </i>
+	     
+         </div>
+
+
+	 <input class="btn" type="submit" value="Iniciar sesion"/>
+
+    </form>
+    <!--  -->
+    <!--
+    <div class="textregister">
+        <p>New to VideoClub?</p>
+        <a href="page-register.html"> Create un account !</a>
+    </div>
+    -->
+
+</div>
+
+</body>

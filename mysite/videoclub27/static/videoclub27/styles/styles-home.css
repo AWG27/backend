@@ -1,0 +1,107 @@
+
+.navbar-default {
+    height: unset;
+    background-color: orangered;
+    color: orangered;
+    background-image: unset;
+    border: none;
+    border-radius: unset;
+}
+
+/*---------izquierdo--------------------------------------*/
+/*logo*/
+nav img {
+    margin-left: 15px;
+    margin-top: 4px;
+    color: white;
+}
+
+/*------------centro-----------------------------------*/
+/*barra busqueda*/
+nav .input-group {
+    margin-left: 100px;
+    margin-right: 130px;
+    margin-top: -40px;
+    color: white;
+}
+
+.input-group {
+    margin: 10px 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.input-group input {
+    border: none;
+    background: none;
+}
+
+.input-group button {
+    color: orangered;
+    background: white;
+}
+
+/*-------------derecha----------------------------------*/
+/*boton usuario*/
+nav .dropdown button{
+    background: none;
+    float: right;
+    margin-top: -42px;
+    margin-right: 15px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+nav .dropdown button:hover {
+    background: white;
+    color: orangered;
+}
+
+.dropdown-menu {
+    text-align: center;
+    right: 0;
+    left: unset;
+    box-shadow: unset;
+    background: orangered;
+}
+
+.dropdown-menu li .dropdown-item-1,
+.dropdown-menu li .dropdown-item-2{
+    color: white;
+}
+
+.dropdown-menu li .dropdown-item-1:hover,
+.dropdown-menu li .dropdown-item-2:hover{
+    color: orangered;
+}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+
+.pelicula {
+    margin-top: 100px;
+}
+
+/*------------------------------------------------------------------------------*/
+h1{
+    text-align: center;
+}
+
+.col-md-5{
+    margin-top: 40px;
+}
+
+.row{
+	margin-left: 2px;
+}
+
+.inputestilo{
+	outline: none;
+	background-color: unset;
+	border: 0;
+}
